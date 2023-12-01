@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "rangeStrategy": "bump",
+  "prHourlyLimit": 0,
+  "labels": ["dependencies"],
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "enabled": true
+  }
+}

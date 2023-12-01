@@ -1,0 +1,35 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  ci:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [18]
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: pnpm
+
+      - name: 📦 Install dependencies
+        run: pnpm install
+
+      - name: 🛠️ Build project
+        run: pnpm generate
+
+      - name: ✅ Lint
+        run: pnpm lint
