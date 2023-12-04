@@ -1,13 +1,13 @@
 <template>
   <main class="flex-1 p-4">
     <div class="grid grid-cols-4 gap-4">
-      <NuxtLink v-for="item in menu" :key="item" :to="item.link">
+      <NuxtLink v-for="item in menu" :key="item" :to="`/${item.slug}`">
         <div class="card bg-base-100 shadow-xl">
           <figure>
-            <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+            <img :src="`/img/${item.slug}.png`" :alt="item.label" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">{{ item.label }}</h2>
+          <div class="card-body py-4 px-6">
+            <span class="card-title">{{ item.label }}</span>
           </div>
         </div>
       </NuxtLink>

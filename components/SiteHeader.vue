@@ -5,7 +5,7 @@
         <NuxtLink to="/" active-class="active">Home</NuxtLink>
       </li>
       <li v-for="page in menu" :key="page">
-        <NuxtLink :to="page.link" active-class="active">{{ page.label }}</NuxtLink>
+        <NuxtLink :to="`/${page.slug}`" active-class="active">{{ page.label }}</NuxtLink>
       </li>
     </ul>
   </header>
