@@ -10,8 +10,4 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  app: {
-    baseURL: '/tresjs-playground/',
-  },
-
 })
