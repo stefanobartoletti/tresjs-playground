@@ -6,7 +6,7 @@
           <figure>
             <img :src="`/img/${item.slug}.png`" :alt="item.label" />
           </figure>
-          <div class="card-body py-4 px-6">
+          <div class="card-body px-6 py-4">
             <span class="card-title">{{ item.label }}</span>
           </div>
         </div>
