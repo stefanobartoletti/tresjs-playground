@@ -1,43 +1,24 @@
 <template>
-  <main class="relative flex flex-1 items-center justify-center overflow-hidden bg-blue-400 p-4">
+  <main class="relative flex flex-1 items-center justify-center overflow-hidden bg-blue-700 p-4">
     <h1 class="z-20 mx-auto text-center text-7xl font-bold text-yellow-400 md:text-9xl">Floating items title</h1>
-    <div class="pointer-events-none absolute z-10 aspect-square w-48 -translate-x-28 md:w-80 md:-translate-x-56">
+    <div class="pointer-events-none absolute aspect-square w-48 md:w-80 " v-for="ring in rings" :key="ring" :class="ring.classes">
       <TresCanvas
         preset="realistic"
         :alpha="true"
       >
         <TresPerspectiveCamera
-          :position="[1.6, 1.6, 1.6]"
+          :position="[1.8, 1.8, 1.8]"
           :look-at="[0, 0, 0]"
         />
-        <TresMesh
-          ref="ring1"
-          :scale="1"
-        >
-          <TresTorusGeometry :args="[1, 0.1, 32, 128]" />
-          <TresMeshPhongMaterial color="red" :shininess="150" />
-        </TresMesh>
-        <TresDirectionalLight color="#fff" :intensity="0.5" />
-        <TresAmbientLight :intensity="0.1" />
-      </TresCanvas>
-    </div>
+        <Levioso rotation-factor="2" float-factor="2">
 
-    <div class="pointer-events-none absolute z-30 aspect-square w-48 translate-x-28 md:w-80 md:translate-x-56">
-      <TresCanvas
-        preset="realistic"
-        :alpha="true"
-      >
-        <TresPerspectiveCamera
-          :position="[1.6, 1.6, 1.6]"
-          :look-at="[0, 0, 0]"
-        />
-        <TresMesh
-          ref="ring2"
+          <TresMesh
           :scale="1"
-        >
+          >
           <TresTorusGeometry :args="[1, 0.1, 32, 128]" />
-          <TresMeshPhongMaterial color="lightgreen" :shininess="150" />
+          <MeshGlassMaterial :color="ring.color" />
         </TresMesh>
+      </Levioso>
         <TresDirectionalLight color="#fff" :intensity="0.5" />
         <TresAmbientLight :intensity="0.1" />
       </TresCanvas>
@@ -46,20 +27,11 @@
 </template>
 
 <script setup>
-const { onLoop } = useRenderLoop()
 
-const ring1 = shallowRef(null)
-const ring2 = shallowRef(null)
+const rings = ref([
+  { color: '#b0b', classes: 'z-10 -translate-x-32 md:-translate-x-80' },
+  { color: '#bb0', classes: 'z-30 translate-x-32 md:translate-x-80' },
+  { color: '#0bb', classes: 'z-20' },
 
-onLoop(({ delta, elapsed }) => {
-  if (ring1.value) {
-    ring1.value.rotation.y += delta * 0.15
-
-    ring1.value.rotation.x = elapsed * 0.2
-  }
-  if (ring2.value) {
-    ring2.value.rotation.y = elapsed * -0.15
-    ring2.value.rotation.x += delta * -0.2
-  }
-})
+])
 </script>
