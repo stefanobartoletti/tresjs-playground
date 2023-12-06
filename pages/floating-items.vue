@@ -1,11 +1,10 @@
 <template>
-  <main class="relative flex flex-1 items-center justify-center bg-blue-400">
-    <h1 class="z-20 mx-auto text-9xl font-bold">Floating text title</h1>
-    <div class="pointer-events-none absolute z-10 aspect-square w-80 -translate-x-56">
+  <main class="relative flex flex-1 items-center justify-center overflow-hidden bg-blue-400 p-4">
+    <h1 class="z-20 mx-auto text-center text-7xl font-bold text-yellow-400 md:text-9xl">Floating items title</h1>
+    <div class="pointer-events-none absolute z-10 aspect-square w-48 -translate-x-28 md:w-80 md:-translate-x-56">
       <TresCanvas
         preset="realistic"
-        alpha="true"
-        premultiplied-alpha="false"
+        :alpha="true"
       >
         <TresPerspectiveCamera
           :position="[1.6, 1.6, 1.6]"
@@ -23,11 +22,10 @@
       </TresCanvas>
     </div>
 
-    <div class="pointer-events-none absolute z-30 aspect-square w-80 translate-x-56">
+    <div class="pointer-events-none absolute z-30 aspect-square w-48 translate-x-28 md:w-80 md:translate-x-56">
       <TresCanvas
         preset="realistic"
-        alpha="true"
-        premultiplied-alpha="false"
+        :alpha="true"
       >
         <TresPerspectiveCamera
           :position="[1.6, 1.6, 1.6]"
