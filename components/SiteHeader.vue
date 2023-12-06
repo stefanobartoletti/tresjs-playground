@@ -1,16 +1,13 @@
 <template>
-  <header class="sticky top-0 h-screen p-4">
-    <ul class="menu w-56 rounded-box bg-base-200">
+  <header class="fixed p-4 z-50">
+    <ul class="menu rounded-box bg-base-200">
       <li>
-        <NuxtLink to="/" active-class="active">Home</NuxtLink>
-      </li>
-      <li v-for="page in menu" :key="page">
-        <NuxtLink :to="`/${page.slug}`" active-class="active">{{ page.label }}</NuxtLink>
+        <NuxtLink to="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M6 19h3v-6h6v6h3v-9l-6-4.5L6 10v9Zm-2 2V9l8-6l8 6v12h-7v-6h-2v6H4Zm8-8.75Z"/></svg></NuxtLink>
       </li>
     </ul>
   </header>
 </template>
 
 <script setup>
-const menu = useMenu()
+
 </script>
