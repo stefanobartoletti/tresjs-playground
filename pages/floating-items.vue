@@ -3,7 +3,7 @@
     <h1 class="z-20 mx-auto text-9xl font-bold">Floating text title</h1>
     <div class="pointer-events-none absolute z-10 aspect-square w-80 -translate-x-56">
       <TresCanvas
-
+        preset="realistic"
         alpha="true"
         premultiplied-alpha="false"
       >
