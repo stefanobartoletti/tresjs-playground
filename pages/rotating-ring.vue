@@ -9,7 +9,7 @@
         :look-at="[0, 0, 0]"
       />
       <TresMesh
-        ref="torusRef"
+        ref="ring"
         :scale="1"
       >
         <TresTorusGeometry :args="[1, 0.1, 32, 128]" />
@@ -24,13 +24,13 @@
 <script setup>
 const { onLoop } = useRenderLoop()
 
-const torusRef = shallowRef(null)
+const ring = shallowRef(null)
 
 onLoop(({ delta, elapsed }) => {
-  if (torusRef.value) {
-    torusRef.value.rotation.y += delta * 0.15
+  if (ring.value) {
+    ring.value.rotation.y += delta * 0.15
 
-    torusRef.value.rotation.x = elapsed * 0.2
+    ring.value.rotation.x = elapsed * 0.2
   }
 })
 </script>
