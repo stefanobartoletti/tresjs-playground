@@ -7,4 +7,8 @@ export const useMenu = () => useState('menu', () => [
     slug: 'floating-items',
     label: 'Floating Items',
   },
+  {
+    slug: '3d-text',
+    label: '3D Text',
+  },
 ])
