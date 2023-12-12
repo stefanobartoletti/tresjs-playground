@@ -15,7 +15,7 @@
     "@nuxtjs/tailwindcss": "^6.10.1",
     "@stefanobartoletti/eslint-config": "^1.2.1",
     "@tresjs/cientos": "^3.6.0",
-    "@tresjs/nuxt": "^1.3.0",
+    "@tresjs/nuxt": "^2.0.1",
     "daisyui": "^4.4.19",
     "nuxt": "^3.8.2",
     "three": "^0.159.0",
