@@ -16,7 +16,7 @@
     "@stefanobartoletti/eslint-config": "^1.2.1",
     "@tresjs/cientos": "^3.6.0",
     "@tresjs/nuxt": "^2.0.1",
-    "daisyui": "^4.4.19",
+    "daisyui": "^4.5.0",
     "nuxt": "^3.8.2",
     "three": "^0.159.0",
     "vue": "^3.3.11",
