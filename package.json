@@ -11,7 +11,7 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.0.5",
+    "@nuxt/devtools": "^1.0.8",
     "@nuxtjs/tailwindcss": "^6.10.1",
     "@stefanobartoletti/eslint-config": "^1.2.1",
     "@tresjs/cientos": "^3.6.0",
