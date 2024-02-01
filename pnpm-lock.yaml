@@ -16,13 +16,13 @@ devDependencies:
     version: 1.2.2(@vue/compiler-sfc@3.3.11)(eslint@8.56.0)(tailwindcss@3.4.1)(typescript@5.3.3)
   '@tresjs/cientos':
     specifier: ^3.7.0
-    version: 3.7.0(@tresjs/core@3.6.1)(three@0.161.0)(tweakpane@4.0.1)(vue@3.3.11)
+    version: 3.7.0(@tresjs/core@3.7.0)(three@0.161.0)(tweakpane@4.0.1)(vue@3.3.11)
   '@tresjs/nuxt':
     specifier: ^2.1.0
     version: 2.1.0(nuxt@3.8.2)(postcss@8.4.33)(three@0.161.0)(vite@4.5.0)(vue@3.3.11)(webpack@5.89.0)
   daisyui:
-    specifier: ^4.4.19
-    version: 4.4.19(postcss@8.4.33)
+    specifier: ^4.6.1
+    version: 4.6.1(postcss@8.4.33)
   nuxt:
     specifier: ^3.8.2
     version: 3.8.2(eslint@8.56.0)(typescript@5.3.3)(vite@4.5.0)
@@ -2588,7 +2588,7 @@ packages:
       tailwindcss: 3.4.1
     dev: true
 
-  /@tresjs/cientos@3.7.0(@tresjs/core@3.6.1)(three@0.161.0)(tweakpane@4.0.1)(vue@3.3.11):
+  /@tresjs/cientos@3.7.0(@tresjs/core@3.7.0)(three@0.161.0)(tweakpane@4.0.1)(vue@3.3.11):
     resolution: {integrity: sha512-et5SNCgRZGb6/NU7CQbrn5E31wr9qq/I8v3YvX7TXWw+RmLmP6UBh4Ctr/dNNpsXwXnUr9oJ6KtFbJU2Gwmd5Q==}
     peerDependencies:
       '@tresjs/core': '>=3.2'
@@ -2596,7 +2596,7 @@ packages:
       tweakpane: '>=3.0.0'
       vue: '>=3.3'
     dependencies:
-      '@tresjs/core': 3.6.1(three@0.161.0)(vue@3.3.11)
+      '@tresjs/core': 3.7.0(three@0.161.0)(vue@3.3.11)
       '@vueuse/core': 10.7.0(vue@3.3.11)
       camera-controls: 2.7.3(three@0.161.0)
       stats-gl: 2.0.1
@@ -4718,8 +4718,8 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: true
 
-  /daisyui@4.4.19(postcss@8.4.33):
-    resolution: {integrity: sha512-IjOLWwnndD4N7Ut5CDxbUsaVtbqXPeVHM92IcgxGFxpuOd3CCKW/PAXZH6JoBTHFRaN57vB9XqEhdWm5yC+bPA==}
+  /daisyui@4.6.1(postcss@8.4.33):
+    resolution: {integrity: sha512-IXI8ypN/hkl1AKsag1XPlWt0wfvL4NedTUtUkv/VFP5q/xDbBZrZthq3/9M2yU1egcbbLhp01rluIz0GICUc+g==}
     engines: {node: '>=16.9.0'}
     dependencies:
       css-selector-tokenizer: 0.8.0
