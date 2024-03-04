@@ -13,7 +13,7 @@
   "devDependencies": {
     "@nuxt/devtools": "^1.0.8",
     "@nuxtjs/tailwindcss": "^6.11.3",
-    "@stefanobartoletti/eslint-config": "^1.2.2",
+    "@stefanobartoletti/eslint-config": "^1.2.3",
     "@tresjs/cientos": "^3.7.0",
     "@tresjs/nuxt": "^2.1.0",
     "daisyui": "^4.6.2",
