@@ -17,7 +17,7 @@
     "@tresjs/cientos": "^3.7.0",
     "@tresjs/nuxt": "^2.1.1",
     "daisyui": "^4.7.2",
-    "nuxt": "^3.10.0",
+    "nuxt": "^3.10.3",
     "three": "^0.162.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
