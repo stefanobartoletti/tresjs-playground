@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-1  items-center justify-center overflow-hidden bg-slate-800">
+  <main class="flex flex-1 items-center justify-center overflow-hidden bg-slate-800">
     <div class="mx-auto grid aspect-square max-h-[80%]  min-w-full grid-cols-4 grid-rows-4 md:min-w-[40%]">
       <div v-for="letter in letters" :key="letter" class=" col-span-2 aspect-square" :class="letter.classes">
         <TresCanvas
@@ -30,6 +30,10 @@
               </Text3D>
             </Suspense>
           </Levioso>
+          <MouseParallax
+            :factor="1.5"
+            :ease="1"
+          />
           <TresDirectionalLight
             color="#fff"
             :intensity="1"
