@@ -55,8 +55,3 @@ const letters = ref([
 
 ])
 </script>
-
-<style scoped>
-
-</style>
-```
