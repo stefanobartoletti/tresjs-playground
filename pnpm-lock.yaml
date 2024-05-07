@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^1.2.6
     version: 1.2.6(@vue/compiler-sfc@3.4.25)(eslint@9.1.1)(tailwindcss@3.4.3)(typescript@5.4.5)
   '@tresjs/cientos':
-    specifier: ^3.8.0
-    version: 3.8.0(@tresjs/core@3.9.0)(three@0.163.0)(tweakpane@4.0.3)(vue@3.4.25)
+    specifier: ^3.9.0
+    version: 3.9.0(@tresjs/core@3.9.0)(three@0.163.0)(tweakpane@4.0.3)(vue@3.4.25)
   '@tresjs/nuxt':
     specifier: ^2.1.1
     version: 2.1.1(nuxt@3.11.2)(postcss@8.4.38)(three@0.163.0)(vite@5.2.10)(vue@3.4.25)(webpack@5.91.0)
@@ -2162,8 +2162,8 @@ packages:
       vue: 3.4.25(typescript@5.4.5)
     dev: true
 
-  /@tresjs/cientos@3.8.0(@tresjs/core@3.9.0)(three@0.163.0)(tweakpane@4.0.3)(vue@3.4.25):
-    resolution: {integrity: sha512-m3lyrBHrHkwkDG28B/vQQUeQ9FlG5C50bkULYEoQXrpIAM8toC11DpxY6VMMvbFc4qhZA5QdTZIlznJ8ZDopFQ==}
+  /@tresjs/cientos@3.9.0(@tresjs/core@3.9.0)(three@0.163.0)(tweakpane@4.0.3)(vue@3.4.25):
+    resolution: {integrity: sha512-LAtMveKlecKvWh7TNWdwEs3nQUYMLqz9DZy0YhSZ6OVTfL2vevx2K4sH9744UME8OedUf4fkFFkX4OWQRHaDRQ==}
     peerDependencies:
       '@tresjs/core': '>=3.2'
       three: '>=0.133'
@@ -2177,7 +2177,7 @@ packages:
       stats.js: 0.17.0
       three: 0.163.0
       three-custom-shader-material: 5.4.0(three@0.163.0)
-      three-stdlib: 2.29.6(three@0.163.0)
+      three-stdlib: 2.29.11(three@0.163.0)
       tweakpane: 4.0.3
       vue: 3.4.25(typescript@5.4.5)
     transitivePeerDependencies:
@@ -9365,8 +9365,8 @@ packages:
       three: 0.163.0
     dev: true
 
-  /three-stdlib@2.29.6(three@0.163.0):
-    resolution: {integrity: sha512-nj9bHkzhhwfmqQcM/keC2RDb0bHhbw6bRXTy81ehzi8F1rtp6pJ5eS0/vl1Eg5RMFqXOMyxJ6sDHPoLU+IrVZg==}
+  /three-stdlib@2.29.11(three@0.163.0):
+    resolution: {integrity: sha512-vSyUavKCwOJQd2ch9IHhyJVx6eNG3y+z3/LulqHM7OLMy81OqnmIrvc2b4phKr/c1aVjHRNG2X7JOklfrDDcmQ==}
     peerDependencies:
       three: '>=0.128.0'
     dependencies:
