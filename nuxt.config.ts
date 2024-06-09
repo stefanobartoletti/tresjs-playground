@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@tresjs/nuxt',
+    '@stefanobartoletti/nuxt-social-share',
   ],
 
   devtools: {
