@@ -1,11 +1,5 @@
-import { nuxt, stefanobartoletti, tailwind } from '@stefanobartoletti/eslint-config'
+import { createConfigForNuxt } from '@nuxt/eslint-config/flat'
 
-export default stefanobartoletti(
-  {
-    ignores: [
-      '**/public/**/*',
-    ],
-  },
-  nuxt,
-  tailwind,
-)
+export default createConfigForNuxt({
+  // options here
+})

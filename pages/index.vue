@@ -4,7 +4,7 @@
       <NuxtLink v-for="item in menu" :key="item" :to="`/${item.slug}`">
         <div class="card bg-base-100 shadow-xl">
           <figure>
-            <img :src="`/img/${item.slug}.png`" :alt="item.label" />
+            <img :src="`/img/${item.slug}.png`" :alt="item.label" >
           </figure>
           <div class="card-body px-6 py-4">
             <span class="card-title">{{ item.label }}</span>
