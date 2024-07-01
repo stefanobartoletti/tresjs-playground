@@ -15,8 +15,8 @@ importers:
         specifier: ^6.12.0
         version: 6.12.0(magicast@0.3.4)(rollup@4.18.0)
       '@stefanobartoletti/eslint-config':
-        specifier: ^2.0.0
-        version: 2.0.0(@vue/compiler-sfc@3.4.31)(eslint@9.5.0)(tailwindcss@3.4.4)(typescript@5.5.2)
+        specifier: ^3.0.0
+        version: 3.0.0(@vue/compiler-sfc@3.4.31)(eslint@9.5.0)(tailwindcss@3.4.4)(typescript@5.5.2)
       '@stefanobartoletti/nuxt-social-share':
         specifier: 0.7.1-beta.3
         version: 0.7.1-beta.3(magicast@0.3.4)(rollup@4.18.0)
@@ -788,16 +788,6 @@ packages:
     peerDependencies:
       vite: '*'
 
-  '@nuxt/eslint-config@0.3.13':
-    resolution: {integrity: sha512-xnMkcrz9vFjtIuKsfOPhNOKFVD51JZClj/16raciHVOK9eiqZuQjbxaf60b7ffk7cmD1EDhlQhbSxaLAJm/QYg==}
-    peerDependencies:
-      eslint: ^8.57.0 || ^9.0.0
-
-  '@nuxt/eslint-plugin@0.3.13':
-    resolution: {integrity: sha512-8LW9QJgVSARgO7QZmRy6vmWjDdHiAy/GNN3zKFPBetQxj5ECXsK0Ggfn8RiSi9rgqJSQjXDvMMHFpHiDETXgSQ==}
-    peerDependencies:
-      eslint: ^8.57.0 || ^9.0.0
-
   '@nuxt/kit@3.12.2':
     resolution: {integrity: sha512-5kOqEzfc3FsAncjK2je7vuq4/QsR5ypViTnop52mlFLf0Ku1NMCrWCSWYowAh4P0yqTACMAZYa+HdRZHscU84g==}
     engines: {node: ^14.18.0 || >=16.10.0}
@@ -1228,15 +1218,12 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@rushstack/eslint-patch@1.10.3':
-    resolution: {integrity: sha512-qC/xYId4NMebE6w/V33Fh9gWxLgURiNYgVNObbJl2LZv0GUUItCcCqC5axQSwRaAgaxl2mELq1rMzlswaQ0Zxg==}
-
   '@sindresorhus/merge-streams@2.3.0':
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
 
-  '@stefanobartoletti/eslint-config@2.0.0':
-    resolution: {integrity: sha512-FVDMfyzIDNWgvEqykEHp3T6061yPGog/WN8B1k/CWUfhDzsrGFb/9f3sednFokolJZLiO5HofQA/5X0LLWUJfQ==}
+  '@stefanobartoletti/eslint-config@3.0.0':
+    resolution: {integrity: sha512-0TDdhskgdf/UWuVXXxZJh/as0DFBlNHBHNv01XIIBl68Nz4glXSc65UrreORmcermtx7sUHU8qvxudo6tNORjw==}
     peerDependencies:
       eslint: '>=9.5.0'
 
@@ -6273,39 +6260,6 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@nuxt/eslint-config@0.3.13(eslint@9.5.0)(typescript@5.5.2)':
-    dependencies:
-      '@eslint/js': 9.5.0
-      '@nuxt/eslint-plugin': 0.3.13(eslint@9.5.0)(typescript@5.5.2)
-      '@rushstack/eslint-patch': 1.10.3
-      '@stylistic/eslint-plugin': 2.3.0(eslint@9.5.0)(typescript@5.5.2)
-      '@typescript-eslint/eslint-plugin': 7.14.1(@typescript-eslint/parser@7.14.1(eslint@9.5.0)(typescript@5.5.2))(eslint@9.5.0)(typescript@5.5.2)
-      '@typescript-eslint/parser': 7.14.1(eslint@9.5.0)(typescript@5.5.2)
-      eslint: 9.5.0
-      eslint-config-flat-gitignore: 0.1.5
-      eslint-flat-config-utils: 0.2.5
-      eslint-plugin-import-x: 0.5.2(eslint@9.5.0)(typescript@5.5.2)
-      eslint-plugin-jsdoc: 48.5.0(eslint@9.5.0)
-      eslint-plugin-regexp: 2.6.0(eslint@9.5.0)
-      eslint-plugin-unicorn: 53.0.0(eslint@9.5.0)
-      eslint-plugin-vue: 9.26.0(eslint@9.5.0)
-      globals: 15.6.0
-      pathe: 1.1.2
-      tslib: 2.6.3
-      vue-eslint-parser: 9.4.3(eslint@9.5.0)
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
-
-  '@nuxt/eslint-plugin@0.3.13(eslint@9.5.0)(typescript@5.5.2)':
-    dependencies:
-      '@typescript-eslint/types': 7.14.1
-      '@typescript-eslint/utils': 7.14.1(eslint@9.5.0)(typescript@5.5.2)
-      eslint: 9.5.0
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
-
   '@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0)':
     dependencies:
       '@nuxt/schema': 3.12.2(rollup@4.18.0)
@@ -6878,14 +6832,11 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.18.0':
     optional: true
 
-  '@rushstack/eslint-patch@1.10.3': {}
-
   '@sindresorhus/merge-streams@2.3.0': {}
 
-  '@stefanobartoletti/eslint-config@2.0.0(@vue/compiler-sfc@3.4.31)(eslint@9.5.0)(tailwindcss@3.4.4)(typescript@5.5.2)':
+  '@stefanobartoletti/eslint-config@3.0.0(@vue/compiler-sfc@3.4.31)(eslint@9.5.0)(tailwindcss@3.4.4)(typescript@5.5.2)':
     dependencies:
       '@antfu/eslint-config': 2.21.1(@vue/compiler-sfc@3.4.31)(eslint-plugin-format@0.1.2(eslint@9.5.0))(eslint@9.5.0)(typescript@5.5.2)
-      '@nuxt/eslint-config': 0.3.13(eslint@9.5.0)(typescript@5.5.2)
       eslint: 9.5.0
       eslint-plugin-format: 0.1.2(eslint@9.5.0)
       eslint-plugin-tailwindcss: 3.17.4(tailwindcss@3.4.4)
