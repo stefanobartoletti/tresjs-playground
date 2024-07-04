@@ -5,10 +5,17 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@tresjs/nuxt',
     '@stefanobartoletti/nuxt-social-share',
+    '@nuxt/eslint',
   ],
 
   devtools: {
     enabled: true,
+  },
+
+  eslint: {
+    config: {
+      standalone: false,
+    },
   },
 
 })
