@@ -18,4 +18,8 @@ export default defineNuxtConfig({
     },
   },
 
+  socialShare: {
+    baseUrl: 'https://tresjs-playground.vercel.app/',
+  },
+
 })
