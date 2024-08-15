@@ -19,7 +19,7 @@
     "@stefanobartoletti/eslint-config": "^3.0.0",
     "@stefanobartoletti/nuxt-social-share": "1.0.0-beta.0",
     "@tresjs/cientos": "^3.9.0",
-    "@tresjs/nuxt": "^3.0.0",
+    "@tresjs/nuxt": "^3.0.3",
     "daisyui": "^4.12.10",
     "eslint": "^9.6.0",
     "nuxt": "^3.12.3",
