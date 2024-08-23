@@ -21,7 +21,7 @@
     "@tresjs/cientos": "^4.0.0",
     "@tresjs/nuxt": "^3.0.3",
     "daisyui": "^4.12.10",
-    "eslint": "^9.9.0",
+    "eslint": "^9.9.1",
     "nuxt": "^3.12.4",
     "three": "^0.167.1"
   }
