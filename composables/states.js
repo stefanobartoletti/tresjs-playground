@@ -11,4 +11,8 @@ export const useMenu = () => useState('menu', () => [
     slug: '3d-text',
     label: '3D Text',
   },
+  {
+    slug: 'physical-material',
+    label: 'Physical Material',
+  },
 ])
