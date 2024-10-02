@@ -27,9 +27,8 @@
       <TresDirectionalLight color="#fff" :intensity="0.25" :position="[3, -3, -3]" />
       <TresDirectionalLight color="#fff" :intensity="0.25" :position="[-3, -3, 3]" />
       <TresAmbientLight :intensity="0.5" />
-      <Suspense>
-        <Environment files="/hdr/illovo_beach_balcony_1k.hdr" />
-      </Suspense>
+
+      <Environment preset="modern" />
     </TresCanvas>
   </main>
 </template>
