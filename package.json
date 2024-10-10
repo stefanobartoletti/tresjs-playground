@@ -16,7 +16,7 @@
     "@nuxt/devtools": "^1.4.1",
     "@nuxt/eslint": "^0.5.3",
     "@nuxtjs/tailwindcss": "^6.12.1",
-    "@stefanobartoletti/eslint-config": "^3.0.2",
+    "@stefanobartoletti/eslint-config": "^3.0.5",
     "@stefanobartoletti/nuxt-social-share": "1.0.1",
     "@tresjs/cientos": "^4.0.0",
     "@tresjs/nuxt": "^3.0.3",
