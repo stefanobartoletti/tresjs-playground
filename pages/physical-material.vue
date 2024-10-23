@@ -7,11 +7,8 @@
         :position="[3, 3, 3]"
         :look-at="[0, 0, 0]"
       />
-      <TresMesh
-        ref="ring"
-        :scale="0.1"
-      >
-        <TresTorusKnotGeometry :args="[10, 3, 200, 32]" />
+      <TresMesh ref="knot">
+        <TresTorusKnotGeometry :args="[1, 0.3, 200, 32]" />
         <TresMeshPhysicalMaterial
           color="#049ef4"
           roughness="0.1"
@@ -36,13 +33,10 @@
 <script setup>
 const { onLoop } = useRenderLoop()
 
-const ring = shallowRef(null)
+const knot = shallowRef(null)
 
 onLoop(({ delta, elapsed }) => {
-  if (ring.value) {
-    ring.value.rotation.y += delta * 0.15
-
-    ring.value.rotation.x = elapsed * 0.2
-  }
+  knot.value.rotation.y += delta * 0.15
+  knot.value.rotation.x = elapsed * 0.2
 })
 </script>

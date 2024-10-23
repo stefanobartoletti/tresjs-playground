@@ -1,17 +1,12 @@
 <template>
   <main class="flex-1">
-    <TresCanvas
-      clear-color="#333"
-    >
+    <TresCanvas clear-color="#333">
       <TresPerspectiveCamera
         :position="[3, 3, 3]"
         :look-at="[0, 0, 0]"
       />
-      <TresMesh
-        ref="ring"
-        :scale="1.25"
-      >
-        <TresSphereGeometry :args="[1, 64, 32]" />
+      <TresMesh ref="ball">
+        <TresSphereGeometry :args="[1.25, 64, 32]" />
         <TresMeshPhysicalMaterial
           roughness="0.1"
           metalness="0.9"
@@ -31,11 +26,9 @@
 <script setup>
 const { onLoop } = useRenderLoop()
 
-const ring = shallowRef(null)
+const ball = shallowRef(null)
 
 onLoop(({ delta, _elapsed }) => {
-  if (ring.value) {
-    ring.value.rotation.y += delta * 0.25
-  }
+  ball.value.rotation.y += delta * 0.25
 })
 </script>

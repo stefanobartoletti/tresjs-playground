@@ -2,10 +2,7 @@
   <main class="flex flex-1 items-center justify-center overflow-hidden bg-slate-800">
     <div class="mx-auto grid aspect-square max-h-[80%]  min-w-full grid-cols-4 grid-rows-4 md:min-w-[40%]">
       <div v-for="letter in letters" :key="letter" class=" col-span-2 aspect-square" :class="letter.classes">
-        <TresCanvas
-          preset="realistic"
-          :alpha="true"
-        >
+        <TresCanvas preset="realistic" :alpha="true">
           <TresPerspectiveCamera
             :position="[3, 3, 3]"
             :look-at="[0, 0, 0]"
@@ -52,6 +49,5 @@ const letters = ref([
   { char: 'X', color: '#3b82f6', classes: 'row-start-2 col-start-1' },
   { char: 'B', color: '#ef4444', classes: 'row-start-2 col-start-3' },
   { char: 'A', color: '#10b981', classes: 'row-start-3 col-start-2' },
-
 ])
 </script>
