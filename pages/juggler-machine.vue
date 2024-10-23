@@ -55,30 +55,33 @@ const cube1 = shallowRef(null)
 const cube2 = shallowRef(null)
 const plank = shallowRef(null)
 
-const height1 = ref(1.25)
-const height2 = ref(1.75)
 const cycles = ref(0)
 
 onLoop(({ _delta, elapsed }) => {
-  cube1.value.rotation.y = elapsed * 1.5
-  cube1.value.position.x = Math.cos(elapsed) * 1.5
-  cube1.value.position.y = Math.abs(Math.sin(elapsed)) * height1.value
+  const speedFactor = elapsed * 1
 
-  cube2.value.rotation.y = elapsed * 1.5
-  cube2.value.position.x = -Math.cos(elapsed) * 1.5
-  cube2.value.position.y = Math.abs(Math.sin(elapsed)) * height2.value
+  const jump = {
+    forth: Math.abs(Math.sin(speedFactor)) * 1.5,
+    back: Math.abs(Math.sin(speedFactor * 2)) * 0.75,
+  }
 
-  plank.value.rotation.y = elapsed
+  cube1.value.rotation.y = speedFactor * 2
+  cube1.value.position.x = Math.cos(speedFactor) * 1.5
 
-  cycles.value = Math.floor(plank.value.rotation.y / Math.PI)
+  cube2.value.rotation.y = speedFactor * 2
+  cube2.value.position.x = -1  *Math.cos(speedFactor) * 1.5
+
+  plank.value.rotation.y = speedFactor * 4 // only integers to sync with the jump
+
+  cycles.value = Math.floor(speedFactor / Math.PI)
 
   if (cycles.value % 2 === 0) {
-    height1.value = 1.25
-    height2.value = 1.75
+    cube1.value.position.y = jump.forth
+    cube2.value.position.y = jump.back
   }
   else {
-    height1.value = 1.75
-    height2.value = 1.25
+    cube1.value.position.y = jump.back
+    cube2.value.position.y = jump.forth
   }
 })
 </script>
