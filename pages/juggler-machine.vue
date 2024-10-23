@@ -1,8 +1,6 @@
 <template>
   <main class="flex-1">
-    <TresCanvas
-      clear-color="#4F517D"
-    >
+    <TresCanvas clear-color="#4F517D">
       <TresPerspectiveCamera
         :position="[2, 2, 5]"
         :look-at="[0, 0, 0]"
@@ -57,21 +55,30 @@ const cube1 = shallowRef(null)
 const cube2 = shallowRef(null)
 const plank = shallowRef(null)
 
+const height1 = ref(1.25)
+const height2 = ref(1.75)
+const cycles = ref(0)
+
 onLoop(({ _delta, elapsed }) => {
-  if (cube1.value) {
-    cube1.value.rotation.y = elapsed * 1.5
-    cube1.value.position.x = Math.cos(elapsed) * 1.5
-    cube1.value.position.y = Math.abs(Math.sin(elapsed)) * 1.25
-  }
+  cube1.value.rotation.y = elapsed * 1.5
+  cube1.value.position.x = Math.cos(elapsed) * 1.5
+  cube1.value.position.y = Math.abs(Math.sin(elapsed)) * height1.value
 
-  if (cube2.value) {
-    cube2.value.rotation.y = elapsed * 1.5
-    cube2.value.position.x = -Math.cos(elapsed) * 1.5
-    cube2.value.position.y = Math.abs(Math.sin(elapsed)) * 1.75
-  }
+  cube2.value.rotation.y = elapsed * 1.5
+  cube2.value.position.x = -Math.cos(elapsed) * 1.5
+  cube2.value.position.y = Math.abs(Math.sin(elapsed)) * height2.value
 
-  if (plank.value) {
-    plank.value.rotation.y = elapsed
+  plank.value.rotation.y = elapsed
+
+  cycles.value = Math.floor(plank.value.rotation.y / Math.PI)
+
+  if (cycles.value % 2 === 0) {
+    height1.value = 1.25
+    height2.value = 1.75
+  }
+  else {
+    height1.value = 1.75
+    height2.value = 1.25
   }
 })
 </script>
