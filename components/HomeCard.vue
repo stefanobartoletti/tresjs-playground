@@ -13,6 +13,6 @@
 
 <script setup>
 defineProps({
-  item: { type: Array, required: true },
+  item: { type: String, required: true },
 })
 </script>
