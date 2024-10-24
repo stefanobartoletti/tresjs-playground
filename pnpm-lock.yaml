@@ -21,8 +21,8 @@ importers:
         specifier: ^3.0.6
         version: 3.0.6(@typescript-eslint/utils@8.11.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3))(@vue/compiler-sfc@3.5.12)(eslint@9.13.0(jiti@2.3.3))(tailwindcss@3.4.14)(typescript@5.6.3)
       '@stefanobartoletti/nuxt-social-share':
-        specifier: 1.1.5
-        version: 1.1.5(magicast@0.3.5)(rollup@4.24.0)(webpack-sources@3.2.3)
+        specifier: 1.2.0
+        version: 1.2.0(magicast@0.3.5)(rollup@4.24.0)(webpack-sources@3.2.3)
       '@tresjs/cientos':
         specifier: ^4.0.3
         version: 4.0.3(@tresjs/core@4.2.10(three@0.169.0)(vue@3.5.12(typescript@5.6.3)))(three@0.169.0)(vue@3.5.12(typescript@5.6.3))
@@ -1396,8 +1396,8 @@ packages:
     peerDependencies:
       eslint: '>=9.12.0'
 
-  '@stefanobartoletti/nuxt-social-share@1.1.5':
-    resolution: {integrity: sha512-FURJkfuQ3k3/p0GTY4VDSpJWjk5DQ4dJNEohEEqTXdT/fJKXZX3d1tdb0LyxcHKV68A8hjYIa6PbGM0FCEDzCQ==}
+  '@stefanobartoletti/nuxt-social-share@1.2.0':
+    resolution: {integrity: sha512-iehssGh971g49CFU3A9leUpAgrLMb9gPFIO7OORyh6ghclc6HNr7QaGnOXihAM0VTJRIqiL3f3AEMiAvwT79Kg==}
 
   '@stylistic/eslint-plugin@2.9.0':
     resolution: {integrity: sha512-OrDyFAYjBT61122MIY1a3SfEgy3YCMgt2vL4eoPmvTwDBwyQhAXurxNQznlRD/jESNfYWfID8Ej+31LljvF7Xg==}
@@ -7212,7 +7212,7 @@ snapshots:
       - typescript
       - vitest
 
-  '@stefanobartoletti/nuxt-social-share@1.1.5(magicast@0.3.5)(rollup@4.24.0)(webpack-sources@3.2.3)':
+  '@stefanobartoletti/nuxt-social-share@1.2.0(magicast@0.3.5)(rollup@4.24.0)(webpack-sources@3.2.3)':
     dependencies:
       '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.24.0)(webpack-sources@3.2.3)
       defu: 6.1.4
